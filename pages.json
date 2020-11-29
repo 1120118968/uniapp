@@ -1,0 +1,127 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	 
+	{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "index"
+		}
+	},
+	{
+		"path":"pages/navigator/navigator/navigator"
+		
+		},
+		{
+				"path": "pages/meggage/message",
+				"style": {
+					"navigationBarBackgroundColor": "#007AFF",
+					"navigationBarTitleText": "message",
+					"backgroundColor": "#2C405A",
+					"h5":{
+					"pullToRefresh": {
+						"color": "#808080"
+							}
+						},
+						"app-plus": {
+							"backgroundColor": "#007ADD",
+							"backgroundTextStyle": "#000000"
+						}
+				}
+		},
+		{
+			"path":"pages/list/list/list"	,
+			"style":{
+				"enablePullDownRefresh":true,
+				"onReachBottomDistance":200
+			}
+		},//
+		{
+			"path":"pages/home/home/home"
+		},
+		{
+			"path":"pages/uni-style/uni-style/uni-style"
+		},
+		// home
+		{
+			"path": "pages/detail/detail/detail",
+			"style": {
+				"navigationBarTitleText": "detail"
+			}
+		},
+		{
+			"path": "pages/meggage/message",
+			"style": {
+				"navigationBarBackgroundColor": "#007AFF",
+				"navigationBarTitleText": "message",
+				"backgroundColor": "#2C405A",
+				"h5":{
+				"pullToRefresh": {
+					"color": "#808080"
+						}
+					},
+					"app-plus": {
+						"backgroundColor": "#007ADD",
+						"backgroundTextStyle": "#000000"
+					}
+			}
+	},
+	{
+		"path":"pages/contact/contact/contact"
+	}
+        ,{
+            "path" : "pages/home/home/home",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/list/list/list",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navigator/navigator/navigator",
+            "style" : {}
+        }
+    ],
+"globalStyle": {
+	"navigationBarTextStyle": "white",
+	"navigationBarTitleText": "uni-app",
+	"navigationBarBackgroundColor": "#C0C0C0",
+	"backgroundColor": "#F2F8F8",
+	"backgroundTextStyle": "light"
+},
+"tabBar": {
+	"list": [{
+			"text": "index",
+			"iconPath": "static/logo.png",
+			"pagePath": "pages/index/index",
+			"selectedIconPath": "./static/logo.png"
+		},
+		{
+			"text": "message",
+			"iconPath": "static/logo.png",
+			"pagePath": "pages/meggage/message",
+			"selectedIconPath": "./static/logo.png"
+		},
+		{
+			"text": "contact",
+			"iconPath": "static/logo.png",
+			"pagePath": "pages/contact/contact/contact",
+			"selectedIconPath": "./static/logo.png"
+		}
+	],
+	"color":"#DD524D",
+	"selectedColor":"#2C405A",
+	"backgroundColor":"#8F8F94",
+	"borderStyle":"white",
+	"position":"bottom"
+},
+"condition":{//start modern
+	"current":0,
+	"list":[
+		{
+			"name":"detail page ",
+			"path":"pages/detail/detail/detail",
+			"query":"id = 80"
+		}
+	]
+}
+}
